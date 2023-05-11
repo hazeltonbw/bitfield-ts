@@ -96,6 +96,7 @@ const MOBILE_MENU = 2;
 const MODAL_OPEN = 4;
 const USER_LOGGED_IN = 8;
 const ERROR = 16;
+const FILTER = 32;
 //
 // ..... anything else you can think of
 // Javascript stores up to 2^53 precision for integers
@@ -111,8 +112,8 @@ b.set(USER_LOGGED_IN);
 b.set(ERROR);
 */
 // or all at the same time
-b.set(DARK_MODE | MODAL_OPEN | MOBILE_MENU | USER_LOGGED_IN | ERROR);
+b.set(DARK_MODE | MODAL_OPEN | MOBILE_MENU | USER_LOGGED_IN | ERROR | FILTER);
 b.print();
 // Same with deleting
-b.delete(DARK_MODE | MODAL_OPEN | MOBILE_MENU | USER_LOGGED_IN | ERROR);
+b.delete(DARK_MODE | MODAL_OPEN | MOBILE_MENU | USER_LOGGED_IN | ERROR | FILTER);
 b.print();
